@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+    font-family: Arial;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 153, 255);
+    font-size: 40px;
+    margin-top: 30px;}
+
+button{
+    background: rgb(0, 162, 255);
+    color:rgb(0, 0, 0);
+    border:none;
+    padding:20px;
+    border-radius:15px;
+    cursor:pointer;
+}   
+
+button:hover{
+    background:rgb(0, 255, 221);
+    color:black;
+}
+
+button{
+    transition:0.3s;
+}
+button{
+    margin: 0 45px;
+}
+button{
+    box-shadow:0 0 20px rgb(0, 195, 255);
+}
+button:hover{
+    transform:scale(1.05);
+     transform:translateY(-3px);
+}
+
+p{
+    color:  white;
+    font-size: 20px;
+}
+img{
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px ;
+    box-shadow:0 0 25px rgb(0, 17, 255);
+}
+
+h3{
+    color: white;
+    font-size: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.atas{
+    display:flex;
+    list-style:none;
+    gap: 40px;
+     margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.atas a{
+    text-decoration:none;
+    color:#01eeff;
+    font-weight:500;
+    position: relative;
+}
+
+.atas a:hover{
+    color:#01eeff;
+}
+.atas a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: #01eeff;
+    transition: 0.3s;
+
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+}
+.atas a:hover::after{
+    width: 100%;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: #01eeff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 80px;
+    background: black;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+h2{
+     color: rgb(0, 153, 255);
+     font-size: 30px;
+}
+h3{
+   color: rgb(0, 153, 255);
+   font-size: 30px; 
+}
+.projek img {
+    width: 250px;
+    margin: 15px auto;
+    display: block;
+}
+
+.projek a {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+}
+.projek-btn {
+    display: inline-block;
+    background: #00aaff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 15px;
+    box-shadow: 0 0 15px #00aaff;
+    transition: 0.3s;
+}
+
+.projek-btn:hover {
+    transform: scale(1.08);
+}
+.wa{
+     display: inline-block;
+    background: #00aaff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 15px;
+    box-shadow: 0 0 15px #00aaff;
+    transition: 0.3s;
+}
+
+.wa:hover{
+    transform: scale(1.08);
+}
+
+.w{
+     display: inline-block;
+    background: #00aaff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 15px;
+    box-shadow: 0 0 15px #00aaff;
+    transition: 0.3s;
+}
+
+.w{
+    transform: scale(1.08);
+}
