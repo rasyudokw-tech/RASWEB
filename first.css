@@ -579,3 +579,118 @@ h3{
   transform: translateY(-5px);
   background: #3a63d9;
 }
+
+.starter ul{
+    list-style:none;
+    padding:0;
+}
+
+.starter li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    font-size: 20px;
+}
+
+.starter{
+    color: #00aaff;
+}
+
+.harga{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.harga p{
+    color: #00aaff;
+    font-size: 30px;
+}
+
+.card{
+    width:300px;
+     background:#050816;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.12);
+    border-radius: 15px;
+    border:2px solid #1683ff;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(22,131,255,.2);
+}
+
+.card h3{
+    color:#1683ff;
+}
+
+.card h1{
+    margin:15px 0;
+}
+
+.card ul{
+    list-style:none;
+    padding:0;
+}
+
+.card li{
+    margin:15px 0;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    background:#1683ff;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    margin-top:20px;
+}
+
+.bisnis li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    font-size: 20px;
+    color: #00aaff;
+}
+
+.bisnis h2{
+    font-size: 15px;
+}
+
+.premium  li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    font-size: 20px;
+    color: #00aaff;
+}
+
+.bisnis {
+    position: relative;
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+     box-shadow: 0 4px 12px rgba(0, 217, 255, 0.925);
+      border-radius: 20px;
+      margin-top: -13px;
+        background: black;
+    color: white;
+    padding: 5px 14px;
+}
