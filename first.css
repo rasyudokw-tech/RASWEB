@@ -694,3 +694,61 @@ h3{
     color: white;
     padding: 5px 14px;
 }
+
+.contact-box a{
+    text-decoration:none;
+    color:#01eeff;
+    font-weight:500;
+    position: relative;
+}
+
+.contact-box a:hover{
+    color:#01eeff;
+}
+.contact-box a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: #01eeff;
+    transition: 0.3s;
+
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+}
+.contact-box a:hover::after{
+    width: 100%;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-left: 585px;
+}
+
+.social-icons a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+      border: 2px solid white;
+}
+
+.social:hover {
+    transform: translateY(-5px);
+}
+
+.copy h3{
+    font-size: 17px;
+}
