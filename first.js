@@ -77,33 +77,3 @@ backToTop.addEventListener("click", () => {
   });
 });
 
-const sections = document.querySelectorAll(
-    "#Home, #About, #journey, #project, #Services, #FAQ, #Contact"
-);
-
-const navLinks = document.querySelectorAll("nav ul.atas li a");
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-            });
-
-            const activeLink = document.querySelector(
-                `nav ul.atas li a[href="#${entry.target.id}"]`
-            );
-
-            if (activeLink) {
-                activeLink.classList.add("active");
-            }
-        }
-    });
-}, {
-    threshold: 0.3
-});
-
-sections.forEach((section) => {
-    observer.observe(section);
-});

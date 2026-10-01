@@ -231,6 +231,19 @@ h3{
         margin: 0;
         padding: 8px 12px;
         font-size: 14px;}
+
+    /* Tombol di section Contact (#contact-btn, #btn) pakai margin
+       global 0 45px, kekecilan buat 2 tombol sebelahan di HP */
+    #Contact button {
+        display: block;
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    .contact-box {
+        width: 85vw;
+        max-width: 300px;
+    }
 }
 
 .Services p{
@@ -612,6 +625,8 @@ h3{
 
 .card{
     width:300px;
+    max-width: 90vw;
+    box-sizing: border-box;
      background:#050816;
     border: 1px solid #e5e7eb;
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.12);
@@ -728,7 +743,9 @@ h3{
 .social-icons {
     display: flex;
     gap: 12px;
-    margin-left: 585px;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
 }
 
 .social-icons a{
