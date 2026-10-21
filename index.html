@@ -1,298 +1,237 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-    <title>RASWEB</title>
-    <link rel="stylesheet" href="first.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
-<button id="backToTop" title="Kembali ke atas">
-  ↑
-</button>
-   <nav>
-    <div class="logo">
-    <img src="logo.jpg" alt="RAS WEB Logo">
-    <span>RAS WEB</span>
-</div>
-
-    <ul class="atas">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Price">Price</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
-        <li><a href="#Contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-right">
-    <a href="https://wa.me/6285759547987" class="wa">Contact Me</a>
-    </div>
-</nav>
-   <section id="Home">
-    <h1 id="typing-text"></h1>
-    <img src="dragon.jpg">  
-<h2>Welcome to RASWEB</h2>
-<p>A simple portfolio where I share my projects, skills, and web development journey.</p>
-<p>Feel free to explore! 🚀</p>
-   </section>
-    <section class="sek" id="About">
-    <h2>About Me</h2>
-
-    <p>Halo, nama saya Rasyudo saya umur 13 tahun</p>
-    <p>Kelas 1 SMP ini website pertama saya buat portofolio</p>
-    <p>saya udah jadi programer selama 3 bulan</p>
-
-    <div id="more-about">
-        <p>Saya masih terus belajar dan mengembangkan kemampuan saya di bidang web development.</p>
-        <p>Saat ini saya sedang mempelajari HTML, CSS, JavaScript, dan Python.</p>
-        <p>Saya suka mencoba hal baru dan mengubah ide sederhana menjadi sebuah project.</p>
-        <p>Setiap project yang saya buat jadi kesempatan buat saya belajar sesuatu yang baru.</p>
-        <p>Jika tertarik dengan website bikinan saya bisa hubungi saya dengan tekan contact me</p>
-    </div>
-
-    <button id="read-more">Read More 👀</button>
-
-    <section class="journey" id="journey">
-    <span class="journey-tag">● MY JOURNEY</span>
-
-    <h2>Learning <span>Journey</span></h2>
-    <p class="journey-desc">
-        Perjalanan saya dalam belajar dan mengembangkan skill di dunia programming.
-    </p>
-
-    <div class="timeline">
-
-        <div class="item">
-            <div class="icon html">&lt;/&gt;</div>
-            <div class="content">
-                <span class="date">JUNI 2026</span>
-                <h3>HTML</h3>
-                <p>Mulai belajar struktur dasar website dan memahami cara kerja tag serta element.</p>
-            </div>
-            <span class="number">01</span>
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f4f9ff"><meta name="description" content="RASWEB — website development and portfolio by Rasyudo."><title>RASWEB — Websites with purpose</title><link rel="stylesheet" href="first.css"></head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#Home" aria-label="RASWEB home"><img src="logo.jpg" alt=""><span>RAS<span class="brand-accent">WEB</span></span></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-links"><li><a href="#Home">Home</a></li><li><a href="#About">About</a></li><li><a href="#journey">Journey</a></li><li><a href="#project">Projects</a></li><li><a href="#Services">Services</a></li><li><a href="#Price">Pricing</a></li><li><a href="#FAQ">FAQ</a></li></ul>
+        <a class="button button-small nav-cta" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Contact me <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section" id="Home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow"><i></i> WEB DESIGN & DEVELOPMENT</span>
+            <h1>Websites that turn your ideas into <span>something real.</span></h1>
+            <p class="lead">I create clean, responsive websites for people and businesses ready to build their presence online.</p>
+            <div class="button-row"><a class="button" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Let’s talk <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#project">Explore projects <span aria-hidden="true">↓</span></a></div>
+            <div class="hero-note"><span class="note-mark">✳</span><span>Thoughtful design.<br><b>Built for every screen.</b></span></div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+            <div class="hero-image-wrap"><img src="dragon.jpg" alt="RASWEB developer portrait"></div>
+            <div class="visual-label"><span class="pulse"></span> RASWEB / CREATIVE WEB</div>
+            <span class="hero-index">01 — 04</span>
+          </div>
         </div>
-
-        <div class="item">
-            <div class="icon css">🎨</div>
-            <div class="content">
-                <span class="date">JULI 2026</span>
-                <h3>CSS</h3>
-                <p>Belajar styling, layout, warna, dan responsive design.</p>
-            </div>
-            <span class="number">02</span>
+      </section>
+      <section class="section about-section" id="About">
+        <div class="container about-grid">
+          <div class="about-copy reveal">
+            <span class="eyebrow">A LITTLE ABOUT ME</span>
+            <h2>Curious by nature.<br><span>Building as I learn.</span></h2>
+            <p>Halo, nama saya Rasyudo saya umur 13 tahun</p>
+            <p>Kelas 1 SMP ini website pertama saya buat portofolio</p>
+            <p>saya udah jadi programer selama 3 bulan</p>
+            <div id="more-about" hidden><p>Saya masih terus belajar dan mengembangkan kemampuan saya di bidang web development.</p><p>Saat ini saya sedang mempelajari HTML, CSS, JavaScript, dan Python.</p><p>Saya suka mencoba hal baru dan mengubah ide sederhana menjadi sebuah project.</p><p>Setiap project yang saya buat jadi kesempatan buat saya belajar sesuatu yang baru.</p><p>Jika tertarik dengan website bikinan saya bisa hubungi saya dengan tekan contact me</p></div>
+            <button class="text-button" id="read-more" aria-expanded="false" aria-controls="more-about">Read more <span aria-hidden="true">＋</span></button>
+          </div>
+          <div class="about-art reveal">
+            <div class="about-frame"><img src="aing.jpg" alt="Portrait used on the RASWEB portfolio"></div>
+            <span class="about-stamp">LEARN<br>MAKE<br>REPEAT</span>
+            <span class="about-line"></span>
+          </div>
         </div>
-
-        <div class="item">
-            <div class="icon js">JS</div>
-            <div class="content">
-                <span class="date">AGUSTUS 2026</span>
-                <h3>JavaScript</h3>
-                <p>Membuat website lebih interaktif dengan DOM, event, dan animasi sederhana.</p>
-            </div>
-            <span class="number">03</span>
+      </section>
+      <section class="section journey-section" id="journey">
+        <div class="container">
+          <div class="section-heading reveal"><span class="eyebrow">MY JOURNEY</span><h2>Learning <span>by doing.</span></h2><p class="lead">Perjalanan saya dalam belajar dan mengembangkan skill di dunia programming.</p></div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-no">01</span>
+              <div><span class="date">JUNI 2026</span><h3>HTML</h3><p>Mulai belajar struktur dasar website dan memahami cara kerja tag serta element.</p></div>
+              <span class="timeline-icon">&lt;/&gt;</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-no">02</span>
+              <div><span class="date">JULI 2026</span><h3>CSS</h3><p>Belajar styling, layout, warna, dan responsive design.</p></div>
+              <span class="timeline-icon">✳</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-no">03</span>
+              <div><span class="date">AGUSTUS 2026</span><h3>JavaScript</h3><p>Membuat website lebih interaktif dengan DOM, event, dan animasi sederhana.</p></div>
+              <span class="timeline-icon">JS</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-no">04</span>
+              <div><span class="date">SEPTEMBER 2026 – SEKARANG</span><h3>Python</h3><p>Sedang mempelajari logika pemrograman dan dasar backend.</p></div>
+              <span class="timeline-icon">Py</span>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-no">05</span>
+              <div><span class="date">OKTOBER 2026</span><h3>Database & SQL</h3><p>Mulai mempelajari database dan SQL.</p></div>
+              <span class="timeline-icon">DB</span>
+            </article>
+          </div>
         </div>
-
-        <div class="item">
-            <div class="icon py">🐍</div>
-            <div class="content">
-                <span class="date">SEPTEMBER 2026 – SEKARANG</span>
-                <h3>Python</h3>
-                <p>Sedang mempelajari logika pemrograman dan dasar backend.</p>
+      </section>
+      <section class="section projects-section" id="project">
+        <div class="container">
+          <div class="section-heading project-heading reveal">
+            <div><span class="eyebrow">SELECTED WORK</span><h2>Made with <span>curiosity.</span></h2></div>
+            <p class="lead">A few projects from my journey so far.</p>
+          </div>
+          <div class="project-stage" role="region" aria-roledescription="carousel" aria-label="Project carousel" tabindex="0">
+            <div class="project-track">
+              <article class="project-card" data-project data-url="https://rasyudokw-tech.github.io/ras-portfolio/">
+                <a class="project-link" href="https://rasyudokw-tech.github.io/ras-portfolio/" aria-label="Open RASDEV project" target="_blank" rel="noopener">
+                  <div class="project-shot"><!-- Existing RASDEV project image from the original portfolio. --><img src="RASDEV.jpg" alt="RASDEV website screenshot" onerror="this.hidden=true"><span class="shot-fallback">RAS<span>DEV</span><small>PROJECT 01</small></span></div>
+                  <div class="project-meta"><span>01 / PORTFOLIO</span><b>RASDEV <i>↗</i></b></div>
+                </a>
+              </article>
+              <article class="project-card" data-project data-url="https://rasyudokw-tech.github.io/RASGARAGE/">
+                <a class="project-link" href="https://rasyudokw-tech.github.io/RASGARAGE/" aria-label="RASGarage project details">
+                  <div class="project-shot"><!-- Replace with final screenshot: assets/projects/rasgarage.png --><img src="rasgarage.jpg" alt="RASGarage website screenshot" onerror="this.hidden=true"><span class="shot-fallback">RAS<span>Garage</span><small>PROJECT 02</small></span></div>
+                  <div class="project-meta"><span>02 / AUTOMOTIVE</span><b>RASGarage <i>↗</i></b></div>
+                </a>
+              </article>
+              <article class="project-card" data-project data-url="https://rasyudokw-tech.github.io/RASBARBER/">
+                <a class="project-link" href="https://rasyudokw-tech.github.io/RASBARBER/" aria-label="RASBarber project details">
+                  <div class="project-shot"><!-- Replace with final screenshot: assets/projects/rasbarber.png --><img src="rasbarber.jpg" alt="RASBarber website screenshot" onerror="this.hidden=true"><span class="shot-fallback">RAS<span>Barber</span><small>PROJECT 03</small></span></div>
+                  <div class="project-meta"><span>03 / BARBER</span><b>RASBarber <i>↗</i></b></div>
+                </a>
+              </article>
+              <article class="project-card" data-project data-url="https://rasyudokw-tech.github.io/RASCAFE/">
+                <a class="project-link" href="https://rasyudokw-tech.github.io/RASCAFE/" aria-label="RASCafe project details">
+                  <div class="project-shot"><!-- Replace with final screenshot: assets/projects/rascafe.png --><img src="rascafe.jpg" alt="RASCafe website screenshot" onerror="this.hidden=true"><span class="shot-fallback">RAS<span>Cafe</span><small>PROJECT 04</small></span></div>
+                  <div class="project-meta"><span>04 / CAFE</span><b>RASCafe <i>↗</i></b></div>
+                </a>
+              </article>
             </div>
-            <span class="number">04</span>
-        </div>
-
-    </div>
-</section>
-
-</section>
-            <section id="project">
-    <h2>My Projects</h2>
-    <div class="project-counter">
-    <span id="project-count">1+</span>
-    <p>Projects</p>
-</div>  
-    <div class="projek">
-    <h3>RASDEV</h3>
-        <img src="RASDEV.png">
-       <a href="https://rasyudokw-tech.github.io/ras-portfolio/" class="projek-btn">View Project</a>
-    <p>Website project yang saya buat untuk menampilkan karya dan kemampuan web development saya.</p>
-    <p>💻 HTML & CSS</p>
-<p>🎨 Custom Design</p>
-<p>📱 Responsive Website</p>
-<p>🚀 Project By Rasyudo</p>
-</div>
-</section> 
-<section id="Services" class="Services">
-    <h2>Services</h2>
-   <p> 💻Website Development💻>Saya membuat website sederhana dan modern menggunakan HTML, CSS, dan JavaScript.</p>
-   <p>🎨Custom Design🎨>Saya membuat tampilan website sesuai dengan konsep dan kebutuhan yang diinginkan.</p>
-   <p>📱Responsive Website Saya📱>membuat website yang dapat menyesuaikan tampilannya di berbagai ukuran layar, seperti komputer dan HP.</p>
-   <p>📜Portfolio Website📜>Saya membuat website portfolio untuk menampilkan profil, project, dan kemampuan yang dimiliki.</p>
-   <p>🛠️Website Improvement🛠️>Saya membantu mengembangkan dan memperbaiki tampilan website agar menjadi lebih menarik dan nyaman digunakan.</p>
-</section>
-
-<section>
-    <div class="why">
-<h2>Why Choose Me</h2>
-<p>⚡ Fast & Responsive — website nyaman dibuka di HP maupun PC</p>
-<p>🎨 Modern Design — desain disesuaikan kebutuhan bisnis</p>
-<p>💬 Easy Communication — gampang diskusi dan revisi   </p>
-<p>💰 Affordable — cocok untuk bisnis yang baru berkembang</p>   
-</div>
-</section>
-
-<section id="Price-heading">
-    <h1>Price</h1>
-</section>
-
-<section id="Price" class="harga">
-    <div class="card">
- <div class="starter">
-        <p>Starter</p>
-        <h1>Rp200k</h1>
-        <ul>
-  <li>✓ Landing Page</li>
-    <li>✓ 1 Page</li>
-    <li>✓ 3-5 Section</li>
-<li>✓ Responsive Design</li>
-<li>✓ WhatsApp Button</li>
-<li>✓ Basic Animation</li>
- <li>X Free Hosting</li>
-</ul>
-<a href="https://wa.me/6285759547987" class="wa">Get Started</a>
-    </div>
-    </div>
-    <div class="card">
-        <div class="bisnis">
-    <span class="badge">Best Value</span>
-    <p>Business</p>
-    <h1>Rp350k</h1>
-    <ul>
-        <li>✓ Company Profile</li>
-        <li>✓ 1 Page</li>
-        <li>✓ 5-7 Section</li>
-        <li>✓ Responsive</li>
-        <li>✓ Contact Form</li>
-        <li>✓ Basic SEO</li>
-        <li>✓ Free Hosting 1 Year</li>
-    </ul>
-    <a href="https://wa.me/6285759547987" class="wa">Get Started</a>
-</div>
-    </div>
-   <div class="card">
-    <div class="premium">
-        <p>Premium</p>
-        <h1>Rp500k+</h1>
-        <ul>
-            <li>✓ Custom Website</li>
-            <li>✓ Custom Design</li>
-            <li>✓ Advanced Features</li>
-            <li>✓ 1-3 Pages</li>
-            <li>✓ More Section</li>
-            <li>✓ Priority Support</li>
-             <li>✓ Free Hosting 1 Year</li>
-        </ul>
-        <a href="https://wa.me/6285759547987" class="wa">Get Started</a>
-    </div>
-   </div>
-
-</section>
-
-<div class="lastt">
-    <p>Have a custom project? Let's discuss it.</p>
-    <p>Get a Quote</p>
-        ></div>
-
-<section id="FAQ" class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <p>Beberapa pertanyaan yang sering ditanyakan.</p>
-
-    <div class="faq-container">
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Apakah website yang dibuat responsive?
-                <span>+</span>
-            </button>
-            <div class="faq-answer">
-                <p>Ya, website dibuat agar dapat menyesuaikan tampilan di komputer, tablet, dan HP.</p>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" data-prev aria-label="Previous project">←</button>
+              <div class="carousel-dots" aria-label="Choose a project"></div>
+              <button class="carousel-arrow" data-next aria-label="Next project">→</button>
+              <span class="carousel-count" aria-live="polite"></span>
             </div>
+          </div>
         </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Berapa lama pembuatan website?
-                <span>+</span>
-            </button>
-            <div class="faq-answer">
-                <p>Waktu pengerjaan tergantung dari tingkat kesulitan dan jumlah fitur yang dibutuhkan,bisa sekitar 1 jam sampai 1 hari sesuai tingkat kesulitan</p>
-            </div>
+      </section>
+      <section class="section services-section" id="Services">
+        <div class="container">
+          <div class="section-heading reveal"><span class="eyebrow">WHAT I CAN HELP WITH</span><h2>From first idea to <span>finished site.</span></h2><p class="lead">Practical website services to help you show up clearly online.</p></div>
+          <div class="service-grid">
+            <article class="service-card reveal"><span class="service-no">01</span><span class="service-icon">⌘</span><h3>Website development</h3><p>Simple, modern websites built around what you need to share or offer.</p></article>
+            <article class="service-card reveal"><span class="service-no">02</span><span class="service-icon">◈</span><h3>Custom design</h3><p>A considered look and feel shaped around your concept and preferences.</p></article>
+            <article class="service-card reveal"><span class="service-no">03</span><span class="service-icon">▣</span><h3>Responsive websites</h3><p>A layout that adapts for comfortable browsing on phones and computers.</p></article>
+            <article class="service-card reveal"><span class="service-no">04</span><span class="service-icon">↗</span><h3>Portfolio websites</h3><p>A clear home for your profile, projects, and the skills you want to share.</p></article>
+            <article class="service-card reveal"><span class="service-no">05</span><span class="service-icon">⚙</span><h3>Website improvement</h3><p>Help refining a website’s appearance and making it more comfortable to use.</p></article>
+          </div>
+          <div class="service-cta reveal"><span>Have an idea in mind?</span><a class="text-button" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Let’s discuss it <b>↗</b></a></div>
         </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Apakah bisa request desain?
-                <span>+</span>
-            </button>
-            <div class="faq-answer">
-                <p>Ya, desain dapat disesuaikan dengan konsep dan kebutuhan website.</p>
-            </div>
+      </section>
+      <section class="section why-section">
+        <div class="container why-grid">
+          <div class="why-intro reveal"><span class="eyebrow">WHY RASWEB</span><h2>Small details.<br><span>Clear intentions.</span></h2><p class="lead">A friendly, thoughtful process for bringing your website idea to life.</p><a class="button button-light" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Start a conversation ↗</a></div>
+          <div class="why-list">
+            <article class="why-item reveal">
+              <span>01</span>
+              <div><h3>Designed around your needs</h3><p>We can shape the page structure and visual direction around your idea.</p></div>
+            </article>
+            <article class="why-item reveal">
+              <span>02</span>
+              <div><h3>Comfortable on every screen</h3><p>Responsive layouts make it easier for visitors to browse on mobile and desktop.</p></div>
+            </article>
+            <article class="why-item reveal">
+              <span>03</span>
+              <div><h3>Easy to discuss and refine</h3><p>Share your feedback directly as the website takes shape.</p></div>
+            </article>
+            <article class="why-item reveal">
+              <span>04</span>
+              <div><h3>Options for different starting points</h3><p>Choose a package that fits the scope you have in mind.</p></div>
+            </article>
+          </div>
         </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Bagaimana cara menghubungi RASWEB?
-                <span>+</span>
-            </button>
-            <div class="faq-answer">
-                <p>Silakan gunakan tombol Contact Me untuk menghubungi saya melalui WhatsApp.</p>
-            </div>
+      </section>
+      <section class="section pricing-section" id="Price">
+        <div class="container">
+          <div class="section-heading reveal"><span class="eyebrow">SIMPLE, CLEAR PRICING</span><h2>Choose your <span>starting point.</span></h2><p class="lead">Each project is different. Let’s talk about what works for yours.</p></div>
+          <div class="price-grid">
+            <article class="price-card reveal">
+              <span class="price-name">Starter</span>
+              <h3>Rp200k</h3>
+              <p class="price-summary">A focused one-page landing page.</p>
+              <ul><li>Landing Page</li><li>1 Page</li><li>3-5 Section</li><li>Responsive Design</li><li>WhatsApp Button</li><li>Basic Animation</li><li class="excluded">X Free Hosting</li></ul>
+              <a class="button button-outline" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Get started ↗</a>
+            </article>
+            <article class="price-card featured reveal">
+              <span class="price-badge">Best Value</span>
+              <span class="price-name">Business</span>
+              <h3>Rp350k</h3>
+              <p class="price-summary">A company profile with the essentials.</p>
+              <ul><li>Company Profile</li><li>1 Page</li><li>5-7 Section</li><li>Responsive</li><li>Contact Form</li><li>Basic SEO</li><li>Free Hosting 1 Year</li></ul>
+              <a class="button" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Get started ↗</a>
+            </article>
+            <article class="price-card reveal">
+              <span class="price-name">Premium</span>
+              <h3>Rp500k+</h3>
+              <p class="price-summary">More room for custom ideas and features.</p>
+              <ul><li>Custom Website</li><li>Custom Design</li><li>Advanced Features</li><li>1-3 Pages</li><li>More Section</li><li>Priority Support</li><li>Free Hosting 1 Year</li></ul>
+              <a class="button button-outline" href="https://wa.me/6285759547987" target="_blank" rel="noopener">Get started ↗</a>
+            </article>
+          </div>
+          <p class="price-note">Have a custom project? <a href="https://wa.me/6285759547987" target="_blank" rel="noopener">Let’s discuss it ↗</a></p>
         </div>
-
-    </div>
-</section>
-
-<section id="Contact">
-    <p>Anda tertarik dengan web saya silahkan tekan Contact Me di bawah ini</p>
-    <button id="contact-btn">Contact Me</button>
-    <button id="btn">Klik </button>
-    <p>Terima kasih sudah menggunakan jasa kami</p>
-</section>
-<div id="contact-popup" class="contact-popup">
-    <div class="contact-box">
-        <button id="close-contact">✖</button>
-
-        <h2>Contact Me 📩</h2>
-        <p>Silakan hubungi saya melalui WhatsApp.</p>
-
-        <a href="https://wa.me/6285759547987" target="_blank">
-            WhatsApp 💬
-        </a>
-    </div>
-</div>
-
-<div class="social-icons">
-    <a href="https://www.instagram.com/rasyudo_gaming" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <a href="https://github.com/rasyudokw-tech" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-    </a>
-
-    <a href="https://www.tiktok.com/@rasyudo_web_developer" target="_blank" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-    </a>
-</div>
-<section class="copy">
-   <h3>© 2026 Rasyudo</h3>
-</section>
-
-   
-<script src="first.js"></script>
-</body>
+      </section>
+      <section class="section faq-section" id="FAQ">
+        <div class="container faq-grid">
+          <div class="section-heading reveal"><span class="eyebrow">GOOD TO KNOW</span><h2>Questions, <span>answered.</span></h2><p class="lead">FAQ content will be added here.</p></div>
+          <div class="faq-list">
+            <article class="faq-item reveal">
+              <h3><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Berapa biaya pembuatan website?<span>＋</span></button></h3>
+              <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden><p>Biaya pembuatan website menyesuaikan jenis proyek, jumlah halaman, dan fitur yang dibutuhkan. Silakan lihat paket harga yang tersedia atau hubungi RASWEB untuk berdiskusi.</p></div>
+            </article>
+            <article class="faq-item reveal">
+              <h3><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">Berapa lama proses pembuatan website?<span>＋</span></button></h3>
+              <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden><p>Waktu pengerjaan bergantung pada kompleksitas proyek dan kelengkapan materi yang diberikan. Estimasi pengerjaan akan dibicarakan sebelum proyek dimulai.</p></div>
+            </article>
+            <article class="faq-item reveal">
+              <h3><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">Apakah website bisa dibuka di HP dan tablet?<span>＋</span></button></h3>
+              <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden><p>Ya. Website dirancang responsif agar tampilannya menyesuaikan berbagai ukuran layar, termasuk desktop, tablet, dan smartphone.</p></div>
+            </article>
+            <article class="faq-item reveal">
+              <h3><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Apakah saya bisa meminta revisi?<span>＋</span></button></h3>
+              <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden><p>Ya. Revisi dapat dilakukan sesuai ketentuan dan kesepakatan yang ditetapkan sebelum pengerjaan dimulai.</p></div>
+            </article>
+            <article class="faq-item reveal">
+              <h3><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">Bagaimana cara memesan layanan RASWEB?<span>＋</span></button></h3>
+              <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden><p>Hubungi RASWEB melalui tombol WhatsApp yang tersedia di website. Sampaikan kebutuhan website yang ingin dibuat agar kita bisa mendiskusikan proyek lebih lanjut.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section contact-section" id="Contact">
+        <div class="container contact-panel reveal">
+          <div><span class="eyebrow">LET’S MAKE SOMETHING</span><h2>Have a website idea?<br><span>Let’s talk.</span></h2><p>Tell me a little about what you need. We can figure out a good place to start.</p></div>
+          <a class="button button-light contact-main" href="https://wa.me/6285759547987" target="_blank" rel="noopener"><span>Chat on WhatsApp</span><b>↗</b></a>
+          <span class="contact-decoration">R</span>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><a class="brand" href="#Home"><img src="logo.jpg" alt=""><span>RAS<span class="brand-accent">WEB</span></span></a><p>Thoughtful websites, built one idea at a time.</p></div>
+        <div class="footer-nav"><b>Explore</b><a href="#About">About</a><a href="#journey">Journey</a><a href="#project">Projects</a><a href="#Services">Services</a></div>
+        <div class="footer-nav"><b>Get in touch</b><a href="https://wa.me/6285759547987" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://www.instagram.com/rasyudo_gaming" target="_blank" rel="noopener">Instagram ↗</a><a href="https://github.com/rasyudokw-tech" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.tiktok.com/@rasyudo_web_developer" target="_blank" rel="noopener">TikTok ↗</a></div>
+        <a class="back-top" href="#Home">Back to top ↑</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="year">2026</span> Rasyudo</span><span>Made with love <b>❤️</b></span></div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <script src="first.js"></script>
+  </body>
 </html>
